@@ -1,0 +1,121 @@
+/* 外觀 */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-image: linear-gradient(
+    to right,
+    rgba(175, 203, 248, 0.924),
+    rgba(95, 133, 194, 0.924)
+  );
+}
+.container {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.todolist {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+/* 標題 */
+
+.header {
+  color: rgb(248, 234, 107);
+  text-shadow: black 0.05em 0.05em 0.2em;
+}
+
+/* form */
+
+.input {
+  margin-bottom: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+.input:focus {
+  transform: translateY(-2px);
+}
+
+.dropdown {
+  margin-left: 0.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: all 0.2s;
+}
+
+.dropdown:focus {
+  transform: translateY(-2px);
+}
+
+.addBtn {
+  border: none;
+  background-color: black;
+  color: rgb(231, 228, 225);
+  border-radius: 2px;
+  margin-left: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  transition: all 0.2s;
+}
+.addBtn:hover {
+  transform: translateY(-1px);
+}
+.addBtn:active {
+  transform: translateY(0);
+}
+
+/* filter */
+.filterContainer {
+  margin-top: 0.7rem;
+}
+.filterBtn {
+  background-color: rgb(243, 241, 239);
+  border: 1px solid gray;
+}
+.filterBtn:not(:last-child) {
+  background-color: rgb(243, 241, 239);
+  border-right: none;
+}
+
+/* todos */
+.todos {
+  background-color: rgb(231, 228, 225);
+  padding: 0.5rem 0.5rem;
+  border-radius: 2px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* todos task*/
+.taskContainer {
+  background-color: rgb(243, 241, 239);
+  margin: 0.5rem;
+  border-radius: 2px;
+}
+.taskContent {
+  display: flex;
+  justify-content: space-between;
+}
+.taskName {
+  margin-left: 0.8rem;
+}
+.taskBtnContainer {
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.taskBtn {
+  border: 1px solid rgb(255, 106, 106);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.taskBtn:hover {
+  transform: translateY(-1px);
+}
+.taskBtn:active {
+  transform: translateY(0px);
+}
